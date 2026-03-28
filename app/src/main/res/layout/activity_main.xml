@@ -10,13 +10,15 @@
         android:layout_height="wrap_content"
         android:text="INDVM - VM Manager"
         android:textSize="24sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
 
     <EditText
         android:id="@+id/vm_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Nama VM (Vectras Style)" />
+        android:hint="Nama VM (Vectras Style)"
+        android:layout_marginBottom="8dp" />
 
     <Button
         android:id="@+id/btn_select_iso"
@@ -24,11 +26,22 @@
         android:layout_height="wrap_content"
         android:text="Pilih ROM/ISO" />
 
+    <TextView
+        android:id="@+id/path_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Belum ada ISO terpilih"
+        android:padding="8dp"
+        android:textSize="12sp"
+        android:textColor="#757575"
+        android:layout_marginBottom="8dp" />
+
     <EditText
         android:id="@+id/qemu_params"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Extra Params (Limbo Style)" />
+        android:hint="Extra Params (Limbo Style)"
+        android:layout_marginBottom="24dp" />
 
     <Button
         android:id="@+id/btn_run"
@@ -37,4 +50,5 @@
         android:backgroundTint="#2196F3"
         android:text="JALANKAN VM"
         android:textColor="#FFFFFF" />
+
 </LinearLayout>
