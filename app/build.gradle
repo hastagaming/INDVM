@@ -1,0 +1,28 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.nasa.indvm'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId "com.nasa.indvm"
+        minSdk 24
+        targetSdk 35
+        versionCode 1
+        versionName "1.0-NASA"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+}
+
+dependencies {
+    // Library dasar untuk UI
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.9.0'
+}

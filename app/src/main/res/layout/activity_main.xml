@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="INDVM - VM Manager"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/vm_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama VM (Vectras Style)" />
+
+    <Button
+        android:id="@+id/btn_select_iso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pilih ROM/ISO" />
+
+    <EditText
+        android:id="@+id/qemu_params"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Extra Params (Limbo Style)" />
+
+    <Button
+        android:id="@+id/btn_run"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#2196F3"
+        android:text="JALANKAN VM"
+        android:textColor="#FFFFFF" />
+</LinearLayout>
